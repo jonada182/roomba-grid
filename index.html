@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="turn-right-btn" class="Btn">Turn Right</button>
+    <button id="move-forward-btn" class="Btn">Move Forward</button>
+    
+    <div class="Grid"></div>      
+
+    <script src="main.js"></script>
+    <script>
+
+        let myRoomba = new Roomba(6, 6, 'roomba.png');
+
+        myRoomba.init({
+            gridSelector: '.Grid',
+            turnRightBtnSelector: '#turn-right-btn',
+            moveForwardBtnSelector: '#move-forward-btn',
+        });
+    </script>
+</body>
+</html>
